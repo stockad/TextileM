@@ -282,6 +282,16 @@
   .client-cat[open] summary::after{content:'접기 ▴';}
   .client-list{padding:0 24px 24px; font-size:13.2px; line-height:2.05; color:var(--ink-soft);}
 
+  /* ---------- apply (google form) ---------- */
+  .apply{background:var(--paper);}
+  .apply-form-wrap{
+    background:#fff; border:1px solid var(--line); border-radius:10px; overflow:hidden;
+    box-shadow:0 20px 50px -24px rgba(35,25,10,.35);
+  }
+  .apply-form-wrap iframe{display:block; width:100%; border:0;}
+  .apply-note{margin-top:18px; font-size:13px; color:var(--ink-soft); text-align:center;}
+  .apply-note a{color:var(--rust); font-weight:600; text-decoration:underline;}
+
   /* ---------- footer ---------- */
   .footer{background:var(--navy-deep); color:#cfc9ba; padding:70px 0 30px;}
   .footer-top{display:flex; justify-content:space-between; flex-wrap:wrap; gap:40px; padding-bottom:44px; border-bottom:1px solid rgba(255,255,255,.12);}
@@ -314,7 +324,7 @@
       <a href="#company">회사 소개</a>
       <a href="#clients">고객사</a>
     </div>
-    <a class="nav-cta" href="http://www.textilesmart.com/main/main/03customer/cust02_write.asp" target="_blank" rel="noopener">무료체험 신청</a>
+    <a class="nav-cta" href="#apply">무료체험 신청</a>
   </div>
 </nav>
 
@@ -327,7 +337,7 @@
     <p class="lead">아이템 스펙 등록부터 QR라벨, 바이어 상담, 샘플 재고, e-카탈로그까지 —
       원단 영업 현장의 모든 과정을 'Textile M' 하나로 관리하세요.</p>
     <div class="hero-ctas">
-      <a class="btn btn-primary" href="http://www.textilesmart.com/main/main/03customer/cust02_write.asp" target="_blank" rel="noopener">무료체험 신청하기</a>
+      <a class="btn btn-primary" href="#apply">무료체험 신청하기</a>
       <a class="btn btn-ghost" href="#features">기능 살펴보기 ↓</a>
     </div>
   </div>
@@ -793,6 +803,21 @@
   </div>
 </section>
 
+<!-- APPLY -->
+<section class="apply pad" id="apply">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Free Trial</div>
+      <h2>무료체험 신청하기</h2>
+      <p>아래 양식을 작성해 주시면 담당자가 빠르게 연락드립니다. 회사명, 성함/직위, 전화번호, 이메일을 남겨주세요.</p>
+    </div>
+    <div class="apply-form-wrap">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdXlbMrSCyer0iCvF6to5RrE2uRl9HkuQXtZHYU-jlGdZKJhw/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">로드 중…</iframe>
+    </div>
+    <p class="apply-note">※ 양식이 보이지 않는다면 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdXlbMrSCyer0iCvF6to5RrE2uRl9HkuQXtZHYU-jlGdZKJhw/viewform" target="_blank" rel="noopener">여기를 눌러 새 창에서 신청서 열기</a></p>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer class="footer">
   <div class="wrap">
@@ -803,7 +828,7 @@
       </div>
       <div class="footer-cta">
         <h3 class="serif">지금 바로 무료체험을 시작해보세요</h3>
-        <a class="btn btn-primary" href="http://www.textilesmart.com/main/main/03customer/cust02_write.asp" target="_blank" rel="noopener">무료체험 신청하기</a>
+        <a class="btn btn-primary" href="#apply">무료체험 신청하기</a>
       </div>
     </div>
     <div class="foot-contact">
